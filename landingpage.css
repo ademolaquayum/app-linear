@@ -1,7 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+}
+.bg-image{
+    /* background-color: crimson, black; */
+    background-image: url('./images/herobg.png');
+    /* background-image: url('./images/herobg.png'), linear-gradient(to top, green, red); */
+    /* background-position: center; */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    border: 2px solid red;
+    /* width: 90%; */
+    margin: 100px auto;
+    height: 80vh;
+}
+.personal{
+    border: 2px solid black;
+    background-image:linear-gradient(90deg, orangered 25%, rgba(255, 192, 203, 0.425) 100%), url('./images/imgi_52_personal-loans_1400x452.png') !important;
+        /* background-image: linear-gradient(90deg, #000059 25%, rgba(41, 36, 102, 0.55) 100%), url(https://edu.sqi.ng/wp-content/uploads/2024/08/sqi-matriculating-students.jpg) !important; */
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    position: relative;
+}
+.personal-text{
+    border: 2px solid black;
+    width: 30vw;
+    position: absolute;
+    top: 200px;
+    left: 300px;
+    padding: 40px;
+    background-color: #F0EEE9;
+    /* filter: contrast(56); */
+    opacity: .8;
+}
+.personal-text h3{
+    font-size: 2em;
+    color: #424A52;
+    margin-bottom: 20px;
+}
+.personal-text p{
+    margin-bottom: 40px;
+}
+.personal-text a{
+    opacity: none;
+    border:  thin solid black;
+    padding: 14px 28px;
+    /* background-image: url('./images/herobg.png'); */
+    /* background-image: linear-gradient(to right, purple 70%, pink); */
+    background-position: center;
+    color: white;
+   
+    background-color:orangered;
+}
+
+
+
+@media(max-width:1020px){
+    .personal-text{
+        top: 100px;
+        left: 150px;
+    }
+}
+
+@media(max-width:854px){
+    .personal-text{
+        width: 50vw;
+    }
+}
+
+.card-wrapper{
+    border: 2px solid crimson;
+    margin: 100px auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    position: relative;
+    height: 20vh;
+}
+
+.cards{
+    width: 300px;
+    height:40px;
+    /* border: 2px solid black; */
+    position: absolute;
+
+}
+.card1{
+    width: 78%;
+    background-color: #DD4F16;
+    /* z-index: 2; */
+}
+.card2{
+    background-color: #AB3D0E;
+    transform: skew(-27deg);
+    right: 0;
+    z-index: 2;
 }
