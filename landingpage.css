@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,7 +9,8 @@
     font-family: "Inter", sans-serif;
     font-style: normal;
 }
-.bg-image{
+
+.bg-image {
     /* background-color: crimson, black; */
     background-image: url('./images/herobg.png');
     /* background-image: url('./images/herobg.png'), linear-gradient(to top, green, red); */
@@ -20,10 +22,11 @@
     margin: 100px auto;
     height: 80vh;
 }
-.personal{
+
+.personal {
     border: 2px solid black;
-    background-image:linear-gradient(90deg, orangered 25%, rgba(255, 192, 203, 0.425) 100%), url('./images/imgi_52_personal-loans_1400x452.png') !important;
-        /* background-image: linear-gradient(90deg, #000059 25%, rgba(41, 36, 102, 0.55) 100%), url(https://edu.sqi.ng/wp-content/uploads/2024/08/sqi-matriculating-students.jpg) !important; */
+    background-image: linear-gradient(90deg, orangered 25%, rgba(255, 192, 203, 0.425) 100%), url('./images/imgi_52_personal-loans_1400x452.png') !important;
+    /* background-image: linear-gradient(90deg, #000059 25%, rgba(41, 36, 102, 0.55) 100%), url(https://edu.sqi.ng/wp-content/uploads/2024/08/sqi-matriculating-students.jpg) !important; */
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -31,7 +34,8 @@
     height: 80vh;
     position: relative;
 }
-.personal-text{
+
+.personal-text {
     border: 2px solid black;
     width: 30vw;
     position: absolute;
@@ -42,42 +46,45 @@
     /* filter: contrast(56); */
     opacity: .8;
 }
-.personal-text h3{
+
+.personal-text h3 {
     font-size: 2em;
     color: #424A52;
     margin-bottom: 20px;
 }
-.personal-text p{
+
+.personal-text p {
     margin-bottom: 40px;
 }
-.personal-text a{
+
+.personal-text a {
     opacity: none;
-    border:  thin solid black;
+    border: thin solid black;
     padding: 14px 28px;
     /* background-image: url('./images/herobg.png'); */
     /* background-image: linear-gradient(to right, purple 70%, pink); */
     background-position: center;
     color: white;
-   
-    background-color:orangered;
+
+    background-color: orangered;
 }
 
 
 
-@media(max-width:1020px){
-    .personal-text{
+@media(max-width:1020px) {
+    .personal-text {
         top: 100px;
         left: 150px;
     }
 }
 
-@media(max-width:854px){
-    .personal-text{
+@media(max-width:854px) {
+    .personal-text {
         width: 50vw;
     }
 }
 
-.card-wrapper{
+.card-wrapper {
     border: 2px solid crimson;
     margin: 100px auto;
     width: 80%;
@@ -88,21 +95,181 @@
     height: 20vh;
 }
 
-.cards{
+.cards {
     width: 300px;
-    height:40px;
+    height: 40px;
     /* border: 2px solid black; */
     position: absolute;
 
 }
-.card1{
+
+.card1 {
     width: 78%;
     background-color: #DD4F16;
     /* z-index: 2; */
 }
-.card2{
+
+.card2 {
     background-color: #AB3D0E;
     transform: skew(-27deg);
     right: 0;
     z-index: 2;
+}
+
+/* -----header styling---- */
+
+.header-hero-wrapper{
+    /* background-color: #08090A; */
+    background-image: linear-gradient(to bottom, #08090a 60%, #7A7D83);
+    min-height: 100vh;
+}
+
+header{
+    border-bottom:thin solid #B1B9C4;
+    position: fixed;
+    width: 100%;
+}
+
+nav{
+    /* border: 2px solid red; */
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.left-side{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+}
+
+.menu-list{
+    display: flex;
+    gap: 2em;
+}
+.menu-list li a{
+    color: #7A7D83;
+    font-size: .8em;
+    font-weight: 600;
+}
+
+.border{
+    border-left: thin solid #424A52;
+    height: 1em;
+}
+
+.fa-bars{
+    color: #424A52;
+    display: none;
+}
+
+.products{
+    position: relative;
+}
+
+.dropdown{
+  
+    display: none;
+    
+}
+
+.products:hover a{
+    color: white;
+    background-color: #424A52;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+.products:hover  .dropdown{
+    display: block;
+     border: 2px solid #424A52;
+    display: flex;
+    gap:2em;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 40px;
+}
+
+.row{
+    color: white;
+    /* border: 2px solid crimson; */
+    border-right: 2px solid #7A7D83;
+     /* width: 50vw; */
+}
+
+.first-div{
+    margin-bottom: 20px;
+     /* border: 2px solid green; */
+     width: 200px;
+     padding: 10px;
+}
+.first-div:hover{
+   
+    background-color: #424A52;
+    border-radius: 10px;
+
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.signup-btn{
+    padding: 8px 16px;
+    border: none;
+    border-radius: 50px;
+}
+.signup-btn a{
+    color: #08090a;
+    font-weight: 600;
+}
+
+/* ---media query-- */
+
+@media(max-width:957px){
+    nav{
+        width: 95%;
+    }
+    .menu-list{
+        gap: 1.5em;
+    }
+}
+
+@media(max-width:826px){
+    nav{
+        width: 100%;
+    }
+    .menu-list{
+        gap: 1em;
+    }
+}
+
+@media(max-width:769px){
+    .menu-list{
+        display: none;
+    }
+    .border{
+        display: none;
+    }
+    .fa-bars{
+        display: block;
+        /* font-size: 2em; */
+    }
+}
+
+@media(max-width:426px){
+    .button{
+        gap: .5em;
+    }
+    .signup-btn{
+        padding: 4px 8px;
+    }
 }
